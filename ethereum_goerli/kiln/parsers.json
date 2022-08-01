@@ -3,7 +3,7 @@
     "chainId": 5,
     "contracts": [
         {
-            "address": "0x8Dc3eCc0c4F446aeA2A2BaF9a369CE944b32C0f2",
+            "address": "0x9562b1515E32c13838CB3df27F967f5Fb6f80D3e",
             "name": "kiln",
             "parsers": [
                 {
@@ -23,7 +23,21 @@
                     "functionName": "deposit",
                     "functionType": "stake",
                     "options": {},
-                    "selector": "0xf340fa01"
+                    "selector": "0xf340fa01",
+                    "screen": [
+                        {
+                            "label": "Withdrawal addr.",
+                            "name": "_withdraw"
+                        }
+                    ]
+                },
+                {
+                  "arguments":[
+                  ],
+                  "functionType":"stake",
+                  "functionName":"deposit",
+                  "options":{},
+                  "selector":"0xd0e30db0"
                 }
             ]
         }
