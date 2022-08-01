@@ -9,8 +9,22 @@
                 {
                     "arguments": [
                         {
+                            "format": "amount",
+                            "label": "ETH amount",
+                            "name": "amountToStake",
+                            "value": {
+                                "quantity": {
+                                    "path": {
+                                        "transaction": "amount"
+                                    }
+                                },
+                            "type": "amount"
+                        }
+                        },
+                        {
                             "format": "eip55",
                             "name": "_withdraw",
+                            "label": "Withdrawal addr.",
                             "value": {
                                 "address": {
                                     "path": {
@@ -23,13 +37,7 @@
                     "functionName": "deposit",
                     "functionType": "stake",
                     "options": {},
-                    "selector": "0xf340fa01",
-                    "screen": [
-                        {
-                            "label": "Withdrawal addr.",
-                            "name": "_withdraw"
-                        }
-                    ]
+                    "selector": "0xf340fa01"
                 },
                 {
                   "arguments":[
