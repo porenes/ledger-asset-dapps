@@ -9,8 +9,23 @@
                 {
                     "arguments": [
                         {
+                          "format": "amount",
+                          "name": "amountToStake",
+                          "value": {
+                              "quantity": {
+                                  "path": {
+                                      "transaction": "amount"
+                                  }
+                              },
+                              "token": {
+                                  "constant": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+                              }
+                          }
+                       },
+                        {
                             "format": "eip55",
                             "name": "_withdraw",
+                            "label": "Withdrawal addr.",
                             "value": {
                                 "address": {
                                     "path": {
@@ -22,14 +37,20 @@
                     ],
                     "functionName": "deposit",
                     "functionType": "stake",
-                    "options": {},
-                    "selector": "0xf340fa01",
+                    "options": {
+                      "ethContractAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+                    },
                     "screen": [
-                        {
-                            "label": "Withdrawal addr.",
-                            "name": "_withdraw"
-                        }
-                    ]
+                      {
+                        "label": "Amount to stake",
+                        "name": "amountToStake"
+                      },
+                      {
+                        "label": "Withdrawal addr.",
+                        "name": "_withdraw"
+                      }
+                   ],
+                    "selector": "0xf340fa01"
                 },
                 {
                   "arguments":[
